@@ -129,7 +129,9 @@ class MQTT:
         # here subscribe to topics
         topics = ["plants/soil","plants/environment","plants/water"]
         for topic in topics:
-            client.subscribe(topic)
+            sub = str(self.uuid) + "/" + topic
+            client.subscribe(sub)
+            print("[-] Subscribed to: %s" % topic)
 
     # The callback for when a PUBLISH message is received from the server.
     def on_message(self, client, userdata, msg):
@@ -145,6 +147,25 @@ class MQTT:
             return {"message":"the topic is not in the allowed topics list","error":True,"allowed_topics":allowed_topics}
         # we need to make sure the payload is list or dictionary (depends on the topic)
         if(type(payload) == type({}) or type(payload) == type([{}])):
+            if(topic == "plants/water"):
+                # define allowed keys
+                allowed_keys = ["key","status"]
+                # we will need to do some verification on the data to make sure it's clean
+                # go through each item on the payload
+                for key in payload:
+                    # check the key names if they are in the allowed list
+                    if(key not in allowed_keys):
+                        # there is a key that is not allowed by the API dataset
+                        return {"message":"one or more of your keys are not allowed","error":True,"allowed_keys":allowed_keys}
+                # check data types in values to make sure they are fit
+                # make sure status is recognized
+                available_states = ["ok","pending"]
+                if(payload["status"] not in available_states):
+                    return {"message":"status is unrecognized","error":True,"allowed_states":available_states}
+                # if we are here, all good. let's send the payload
+                self.client.publish("%s/plants/water" % self.uuid,str(payload).replace("'",'"'))
+                return {"message":"OK","error":False}
+
             if(topic == "plants/environment"):
                 # define allowed keys
                 allowed_keys = ["temp","humidity","sunlight","water_quantity"]
@@ -174,7 +195,7 @@ class MQTT:
 
                 # if we reached here, let's publish environmental data
                 # to plants/environment topic
-                self.client.publish("plants/environment",str(payload).replace("'",'"'))
+                self.client.publish("%s/plants/environment" % self.uuid,str(payload).replace("'",'"'))
                 return {"message":"OK","error":False}
             # first we need to make sure the payload is dictionary
             if(topic == "plants/soil"):
@@ -215,7 +236,8 @@ class MQTT:
                 # if we reached here, let's publish
                 # for each item in the payload, publish it to plants/soil topic
                 for item in payload:
-                    self.client.publish("plants/soil",str(item).replace("'",'"'))
+                    self.client.publish("%s/plants/soil" % self.uuid,str(item).replace("'",'"'))
                 return {"message":"OK","error":False}
+
         else:
             return {"message":"payload is not a dictionary or list","error":True}
