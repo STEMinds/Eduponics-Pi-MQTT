@@ -23,7 +23,9 @@ You don't have to have all those sensors, you can modify your code to support on
 
 clone this repository with git clone to your Raspberry pi and run:
 
-  sudo python3 setup.py install
+```
+sudo python3 setup.py install
+```
 
 For now, this library been tested only on Raspberry Pi (Zero and 2,3,4)
 
@@ -51,46 +53,47 @@ update_environmental_data() | update environmental sensors data | update_environ
 
 Example of single sensor dictionary:
 
-  sensor = {
-      "id":0,
-      "name":"Plant A",
-      "enabled":1,
-      "moisture":"100%"
-  }
-
+```
+sensor = {
+    "id":0,
+    "name":"Plant A",
+    "enabled":1,
+    "moisture":"100%"
+}
+```
 Example of multiple sensors dictionary:
-
-  sensors = [{
-      "id":0,
-      "name":"Plant A",
-      "enabled":1,
-      "moisture":"100%"
-  },{
-      "id":1,
-      "name":"Plant B",
-      "enabled":1,
-      "moisture":"75%"
-  },{
-      "id":2,
-      "name":"Plant C",
-      "enabled":1,
-      "moisture":"25%"
-  },{
-      "id":3,
-      "name":"Plant D",
-      "enabled":0,
-      "moisture":"0%"
-  }]
-
+```
+sensors = [{
+    "id":0,
+    "name":"Plant A",
+    "enabled":1,
+    "moisture":"100%"
+},{
+    "id":1,
+    "name":"Plant B",
+    "enabled":1,
+    "moisture":"75%"
+},{
+    "id":2,
+    "name":"Plant C",
+    "enabled":1,
+    "moisture":"25%"
+},{
+    "id":3,
+    "name":"Plant D",
+    "enabled":0,
+    "moisture":"0%"
+}]
+```
 Example of environmental data dictionary:
-
-  environment_data = {
-      "temp":25.0,
-      "humidity":83.4,
-      "sunlight":3000.0,
-      "water_quantity":"Good"
-  }
-
+```
+environment_data = {
+    "temp":25.0,
+    "humidity":83.4,
+    "sunlight":3000.0,
+    "water_quantity":"Good"
+}
+```
 ## About us
 
 We are STEMinds, a tiny startup based in Shenzhen, China.
@@ -110,7 +113,7 @@ kits takes time, effort and money to develop. During such unprecedented times, i
 That doesn't stop us from giving back to the community and doing our best effort to get involved and create impact, even without earning a penny.
 Support us by spreading the word and if you feel generous, you can buy us a coffee!
 
-![Buy us coffee at ko-fi.com/steminds](./images/ko-fi.png)
+![Buy us coffee at ko-fi.com/steminds](./images/ko-fi.png | width=50)
 
 Feel free to treat us at [ko-fi.com/STEMinds](ko-fi.com/STEMinds) - for you it's 5$ for us it's to keep doing what we love the most.
 
