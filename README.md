@@ -120,11 +120,15 @@ We would like to thank some special contributors to the entire STEMinds Eduponic
 
 For our mobile app language translators
 
-STEMinds - Hebrew, English, Chinese
-Akshay Vernekar - Hindi
-Amanda Elnecave - Português
-David Motsch - German
-Lưu Đức Toàn - Vietnamese
+- STEMinds - Hebrew, English, Chinese
+
+- Akshay Vernekar - Hindi
+
+- Amanda Elnecave - Português
+
+- David Motsch - German
+
+- Lưu Đức Toàn - Vietnamese
 
 ### Play store featured design
 
