@@ -108,7 +108,7 @@ kits takes time, effort and money to develop. During such unprecedented times, i
 That doesn't stop us from giving back to the community and doing our best effort to get involved and create impact, even without earning a penny.
 Support us by spreading the word and if you feel generous, you can buy us a coffee!
 
-![Buy us coffee at ko-fi.com/steminds](./images/ko-fi.png | width=50)
+![Buy us coffee at ko-fi.com/steminds](./images/ko-fi.png)
 
 Feel free to treat us at [ko-fi.com/STEMinds](ko-fi.com/STEMinds) - for you it's 5$ for us it's to keep doing what we love the most.
 
