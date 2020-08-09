@@ -40,12 +40,7 @@ The package includes multiple functions
 
 Function name | Description | Example
 ------------ | ------------- | -------------
-Init | Initialize the MQTT Object | MQTT = mqtt.MQTT(
-    address="mqtt.eclipse.org",
-    port=1883,
-    ts=60,
-    on_message_callback=on_message
-)
+Init | Initialize the MQTT Object | MQTT = mqtt.MQTT(addressportts=on_message_callback)
 get_uuid() | Generate unique UUID and QR code | the library does it automatically
 update_multiple_soil_sensors() | update multiple sensors at once | MQTT.update_multiple_soil_sensors(sensors)
 update_single_soil_sensor()| update single soil moisture sensor | MQTT.update_single_soil_sensor(sensor)
