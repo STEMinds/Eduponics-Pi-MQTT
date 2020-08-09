@@ -141,7 +141,7 @@ Feel free to report a bug through the app to our email at contact@steminds.com
 It will be even better if you can repot us through github and we will follow us to fix it.
 any contribution is welcome. we are looking to improve but not often have the time and resources to do it all.
 
-Please join our facebook [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) for support and updates on upcoming features and projects
+Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) to get support and updates on upcoming features, development progress and projects.
 
 ## TODO List
 
