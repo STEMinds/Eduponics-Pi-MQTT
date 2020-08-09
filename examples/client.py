@@ -40,7 +40,7 @@ def on_message(client, userdata, msg):
         data = json.loads(msg.payload)
         # it can be "OK" payload from our script so we need to check the status is "pending"
         if(data["status"] == "pending"):
-            # if it's pending, we need to take care of it by giving plant water.
+            # if it's pending, we need to take care of it by giving the plant water.
             give_water(client, userdata, msg, data)
     if(msg.topic == "%s/plants/soil" % MQTT.uuid):
         # get payload recieved in plants/water
@@ -57,14 +57,6 @@ def on_message(client, userdata, msg):
             # if it's pending, we need to take care of it by giving plant water.
             MQTT.update_environmental_data(environment_data)
 
-# initialize MQTT object from the eduponics_mqtt package
-MQTT = mqtt.MQTT(
-    address="mqtt.eclipse.org",
-    port=1883,
-    ts=60,
-    on_message_callback=on_message
-)
-
 def give_water(client, userdata, msg, data):
     # TODO: detect which plant need water and give it to him
     plant_key = data["key"]
@@ -73,6 +65,15 @@ def give_water(client, userdata, msg, data):
     response = MQTT.publish_payload("plants/water",payload)
     print(response)
     client.close()
+
+# initialize MQTT object from the eduponics_mqtt package
+MQTT = mqtt.MQTT(
+    address="mqtt.eclipse.org",
+    port=1883,
+    ts=60,
+    on_message_callback=on_message
+)
+
 
 # Blocking call that processes network traffic, dispatches callbacks and
 # handles reconnecting.
