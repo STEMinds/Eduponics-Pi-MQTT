@@ -6,7 +6,7 @@ Python3 MQTT package for the Eduponics Mobile app
 
 ## Usage instructions
 
-## Pre-requirements
+### Pre-requirements
 
 You'll need:
 
@@ -19,7 +19,7 @@ You'll need:
 
 You don't have to have all those sensors, you can modify your code to support only 1 soil moisture sensors or everything.
 
-## Installation
+### Installation
 
 clone this repository with git clone to your Raspberry pi and run:
 
@@ -29,7 +29,7 @@ sudo python3 setup.py install
 
 For now, this library been tested only on Raspberry Pi (Zero and 2,3,4)
 
-## Example code
+### Example code
 
 Please look into /examples folder to find a working example code to communicate with the app..
 the code needs to be modified to connect to your open source hardware.
