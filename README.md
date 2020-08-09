@@ -143,10 +143,10 @@ any contribution is welcome. we are looking to improve but not often have the ti
 - [x] QR code unique UUID generator and scanner in the APP
 - [x] Support for unlimited amount of plants (ScrollView)
 - [x] Multi language support (contact us if you want extra language to be added)
-- [] Ability to change the language inside the APP without changing system language
-- [] Change the MQTT broker to STEMinds dedicated secure and fast MQTT broker.
-- [] Add APP notifications when actions need to be taken (watering, warning etc ...)
-- [] Add hydroponics mode with: pH, EC, TDS, water temperature ...
-- [] Add learning section with knowledge database of plants, veggies, herbs and how to grow them ...
-- [] Simplify the python library
-- [] Add support with circuit-python for ESP32 and other micro controllers
+- [ ] Ability to change the language inside the APP without changing system language
+- [ ] Change the MQTT broker to STEMinds dedicated secure and fast MQTT broker.
+- [ ] Add APP notifications when actions need to be taken (watering, warning etc ...)
+- [ ] Add hydroponics mode with: pH, EC, TDS, water temperature ...
+- [ ] Add learning section with knowledge database of plants, veggies, herbs and how to grow them ...
+- [ ] Simplify the python library
+- [ ] Add support with circuit-python for ESP32 and other micro controllers
