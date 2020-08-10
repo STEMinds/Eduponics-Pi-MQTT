@@ -124,7 +124,9 @@ For our mobile app language translators
 
 - Akshay Vernekar - Hindi
 
-- Amanda Elnecave - Português
+- Ivan Bozhko - Ukrainian
+
+- Amanda Elnecave, Brisa Borges - Português
 
 - David Motsch - German
 
