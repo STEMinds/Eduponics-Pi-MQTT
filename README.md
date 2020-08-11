@@ -140,10 +140,9 @@ Feel free to visit them at hotpot.ai to get your own amazing designs at no time.
 ## Bug reporting & Support
 
 Feel free to report a bug through the app to our email at contact@steminds.com
-It will be even better if you can repot us through github and we will follow up to fix it.
-any contribution is welcome. we are looking to improve but not often have the time and resources to do it all.
+It will be better if you can report to us through Github directly (open issue) and we will follow up to fix it.
 
-Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) to get support and updates on upcoming features, development progress and projects.
+Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) to get support and updates on upcoming features, development, progress and projects.
 
 ## TODO List
 
