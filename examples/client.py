@@ -68,9 +68,6 @@ def give_water(client, userdata, msg, data):
 
 # initialize MQTT object from the eduponics_mqtt package
 MQTT = mqtt.MQTT(
-    address="mqtt.eclipse.org",
-    port=1883,
-    ts=60,
     on_message_callback=on_message
 )
 

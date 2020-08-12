@@ -151,7 +151,7 @@ Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook
 - [x] Support for unlimited amount of plants (ScrollView)
 - [x] Multi language support (contact us if you want extra language to be added)
 - [ ] Ability to change the language inside the APP without changing system language
-- [ ] Change the MQTT broker to STEMinds dedicated secure and fast MQTT broker.
+- [x] Change the MQTT broker to STEMinds dedicated secure and fast MQTT broker.
 - [ ] Add APP notifications when actions need to be taken (watering, warning etc ...)
 - [ ] Add hydroponics mode with: pH, EC, TDS, water temperature ...
 - [ ] Add learning section with knowledge database of plants, veggies, herbs and how to grow them ...

@@ -27,6 +27,7 @@ import json
 import uuid
 import os
 import pyqrcode
+import ssl
 
 '''
 topics:
@@ -38,7 +39,7 @@ plants/water - command service for giving water to plants i.e: {'plant_id':'A'}
 
 class MQTT:
 
-    def __init__(self,address="mqtt.eclipse.org",port=1883,ts=60,uuid=None,on_connect_callback=None,on_message_callback=None):
+    def __init__(self,address="mqtt.steminds.com",port=8883,ts=60,uuid=None,on_connect_callback=None,on_message_callback=None):
         # set debugging true or false
         self.debug = True
         # check if user supplied unique id
@@ -53,6 +54,11 @@ class MQTT:
         self.ts = ts
         # create the client
         self.client = paho_mqtt.Client()
+        # set tls
+        if(self.port == 8883):
+            ssl_ctx = ssl.create_default_context()
+            self.client.tls_set_context(ssl_ctx)
+            self.client.tls_insecure_set(False)
         # connect to the client
         self.client.connect(self.address, self.port, self.ts)
         # redirect call backs to on_connect and on_message
