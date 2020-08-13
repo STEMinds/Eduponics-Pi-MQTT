@@ -110,7 +110,7 @@ Support us by spreading the word and if you feel generous, you can buy us a coff
 
 ![Buy us coffee at ko-fi.com/steminds](./images/ko-fi.png)
 
-Feel free to treat us at [ko-fi.com/STEMinds](ko-fi.com/STEMinds) - for you it's 5$ for us it's to keep doing what we love the most.
+Feel free to treat us at [ko-fi.com/STEMinds](https://ko-fi.com/STEMinds) - for you it's 5$ for us it's to keep doing what we love the most.
 
 ## Special thanks
 
