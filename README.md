@@ -4,6 +4,18 @@
 
 Python3 MQTT package for the Eduponics Mobile app
 
+##  What's new
+
+Eduponics app version: 1.3.1
+
+- Major UI bug fixes
+
+- if language is not translated, fall-back to English, UI fix.
+
+- Mobile app architecture separated to different APKs in android, result significantly smaller APK size.
+
+- Added translation to Spanish
+
 ## Usage instructions
 
 ### Pre-requirements
@@ -132,6 +144,8 @@ For our mobile app language translators
 
 - Lưu Đức Toàn - Vietnamese
 
+- Belén Cebrián - Spanish
+
 ### Play store featured design
 
 For our features play store picture we would like to thank Hotpot Design
@@ -142,7 +156,7 @@ Feel free to visit them at hotpot.ai to get your own amazing designs at no time.
 Feel free to report a bug through the app to our email at contact@steminds.com
 It will be better if you can report to us through Github directly (open issue) and we will follow up to fix it.
 
-Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) to get support and updates on upcoming features, development, progress and projects.
+Please join our facebook group [STEM Raspberry Pi Projects](https://www.facebook.com/groups/933961280359429/) to get support and updates on upcoming features, development, progress and projects or join our subreddit forum at [/r/STEMinds](https://www.reddit.com/r/STEMinds)
 
 ## TODO List
 
