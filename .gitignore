@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 examples/uuid.txt
+.DS_Store
